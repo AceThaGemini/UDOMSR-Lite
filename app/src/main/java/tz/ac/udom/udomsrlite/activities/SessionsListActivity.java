@@ -40,6 +40,7 @@ public class SessionsListActivity extends AppCompatActivity {
         SessionListAdapter adapter = new SessionListAdapter(SessionsListActivity.this);
         recyclerView.setAdapter(adapter);
 
+        // TODO: 3/8/18 fetch sessions from db and to list
 
     }
 

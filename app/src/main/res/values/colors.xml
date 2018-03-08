@@ -9,6 +9,7 @@
     <color name="color_primary_dark">#0288D1</color>
     <color name="color_primary_light">#B3E5FC</color>
     <color name="color_accent">#FF9800</color>
+    <color name="color_accent_light">#ffcc80</color>
     <color name="color_primary_text">#212121</color>
     <color name="color_secondary_text">#757575</color>
     <color name="color_white">#FFFFFF</color>

@@ -8,13 +8,13 @@
     android:layout_marginStart="16dp"
     android:layout_marginTop="1dp"
 
-    app:cardBackgroundColor="@color/selector_color_white_light_grey"
     app:cardCornerRadius="2dp"
     app:cardElevation="2dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/ripple_accent_color"
         android:padding="16dp">
 
         <TextView

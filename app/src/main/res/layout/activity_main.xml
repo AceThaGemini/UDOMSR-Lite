@@ -5,7 +5,8 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tz.ac.udom.udomsrlite.activities.MainActivity">
+    tools:context="tz.ac.udom.udomsrlite.activities.MainActivity"
+    tools:openDrawer="start">
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/coordinatorMain"

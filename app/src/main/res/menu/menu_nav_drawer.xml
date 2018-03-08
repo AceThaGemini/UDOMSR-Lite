@@ -1,52 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--<group-->
-        <!--android:id="@+id/group1"-->
-        <!--android:checkableBehavior="single">-->
-        <!--<item-->
-            <!--android:id="@+id/navFoodMenu"-->
-            <!--android:checked="true"-->
-            <!--android:icon="@drawable/ic_food_burger_drink"-->
-            <!--android:title="What's On Menu" />-->
+    <group
+        android:id="@+id/groupHome"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navFoodMenu"
+            android:checked="true"
+            android:icon="@drawable/ic_home_variant"
+            android:title="Home" />
+    </group>
 
-        <!--<item-->
-            <!--android:id="@+id/navOrders"-->
-            <!--android:icon="@drawable/ic_shopping_basket"-->
-            <!--android:title="Orders" />-->
-    <!--</group>-->
+    <group
+        android:id="@+id/groupProfile"
+        android:checkableBehavior="single">
 
-    <!--<group-->
-        <!--android:id="@+id/groupNearby"-->
-        <!--android:checkableBehavior="single">-->
-        <!--<item-->
-            <!--android:id="@+id/navNearbyRestaurants"-->
-            <!--android:checkable="false"-->
-            <!--android:icon="@drawable/ic_google_maps"-->
-            <!--android:title="Where to Munch" />-->
-    <!--</group>-->
+        <item
+            android:id="@+id/navAccount"
+            android:checkable="false"
+            android:icon="@drawable/ic_account_circle"
+            android:title="Profile" />
+    </group>
 
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navPrefs"
+            android:checkable="false"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
 
-    <!--<group-->
-        <!--android:id="@+id/group2"-->
-        <!--android:checkableBehavior="single">-->
-        <!--<item-->
-            <!--android:id="@+id/navPrefs"-->
-            <!--android:checkable="false"-->
-            <!--android:icon="@drawable/ic_settings"-->
-            <!--android:title="Prefs" />-->
-
-        <!--<item-->
-            <!--android:id="@+id/navAccount"-->
-            <!--android:checkable="false"-->
-            <!--android:icon="@drawable/ic_account_circle"-->
-            <!--android:title="Profile" />-->
-
-        <!--<item-->
-            <!--android:id="@+id/navAbout"-->
-            <!--android:checkable="false"-->
-            <!--android:icon="@drawable/ic_info_outline"-->
-            <!--android:title="About" />-->
-    <!--</group>-->
-
+        <item
+            android:id="@+id/navAbout"
+            android:checkable="true"
+            android:icon="@drawable/ic_info_outline"
+            android:title="About" />
+    </group>
 </menu>
