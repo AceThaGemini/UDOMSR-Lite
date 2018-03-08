@@ -1,5 +1,7 @@
 package tz.ac.udom.udomsrlite.activities;
 
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -20,12 +22,15 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 import tz.ac.udom.udomsrlite.R;
+import tz.ac.udom.udomsrlite.utils.SnackbarHelper;
 
 public class SessionDetailActivity extends AppCompatActivity {
 
     private LinearLayout layoutLoginTime, layoutLogoutTime;
     private CheckBox checkInstructorShowedUp;
     private TextView textStartTime, textEndTime;
+    private FloatingActionButton fab;
+    private CoordinatorLayout coordinatorLayout;
 
     private long pickedTime = 0;
 
@@ -47,6 +52,8 @@ public class SessionDetailActivity extends AppCompatActivity {
         layoutLogoutTime = findViewById(R.id.layoutLogoutTime);
         textStartTime = findViewById(R.id.textStartTime);
         textEndTime = findViewById(R.id.textEndTime);
+        fab = findViewById(R.id.fab);
+        coordinatorLayout = findViewById(R.id.coordinatorLayout);
 
         textStartTime.setText("--:--");
         textEndTime.setText("--:--");
@@ -83,6 +90,16 @@ public class SessionDetailActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // pick logout time
                 pickTime(R.id.textEndTime);
+            }
+        });
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: 3/8/18 submit session records
+                SnackbarHelper.makeSnackbar(coordinatorLayout,
+                        "Session records will be submitted.",
+                        2000);
             }
         });
 
