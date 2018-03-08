@@ -9,6 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import java.text.SimpleDateFormat;
+import java.util.Locale;
+
 import tz.ac.udom.udomsrlite.R;
 import tz.ac.udom.udomsrlite.adapters.SessionListAdapter;
 
@@ -32,6 +35,12 @@ public class SessionsListActivity extends AppCompatActivity {
 
         coordinatorLayout = findViewById(R.id.coordinatorLayout);
         recyclerView = findViewById(R.id.recyclerView);
+
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE", Locale.getDefault());
+        String day = dateFormat.format(System.currentTimeMillis());
+
+        actionBar.setTitle(day + " Sessions");
 
         // manager
         recyclerView.setLayoutManager(new LinearLayoutManager(SessionsListActivity.this));
