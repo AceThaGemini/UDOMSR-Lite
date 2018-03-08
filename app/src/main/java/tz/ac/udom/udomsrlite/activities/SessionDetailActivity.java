@@ -65,7 +65,7 @@ public class SessionDetailActivity extends AppCompatActivity {
                 }
             }
         });
-        // default check
+        // default checksuper();
         checkInstructorShowedUp.setChecked(false);
 
 
