@@ -12,7 +12,15 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Yes I know, don't even say it.\nThe design is lame, will improve it." />
 
         <FrameLayout
             android:layout_width="match_parent"

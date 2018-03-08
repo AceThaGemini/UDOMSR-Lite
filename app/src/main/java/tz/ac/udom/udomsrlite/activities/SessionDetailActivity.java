@@ -41,7 +41,7 @@ public class SessionDetailActivity extends AppCompatActivity {
         assert actionBar != null;
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
-
+        actionBar.setTitle("Course Code : Course Name");
 
         layoutLoginTime = findViewById(R.id.layoutLoginTime);
         layoutLogoutTime = findViewById(R.id.layoutLogoutTime);
